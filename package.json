@@ -7,7 +7,9 @@
         "lint": "./node_modules/.bin/eslint public/*.js",
         "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1",
         "postinstall": "bower install",
-        "prepush": "npm run lint"
+        "prepush": "npm run lint",
+        "precommit": "npm run lint",
+        "grunt": "grunt"
     },
     "repository": "",
     "keywords": [
