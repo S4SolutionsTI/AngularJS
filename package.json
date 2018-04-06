@@ -4,8 +4,10 @@
     "description": "AngularJS",
     "main": "hello-from-nodejs-server.js",
     "scripts": {
+        "lint": "./node_modules/.bin/eslint public/*.js",
         "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1",
-        "postinstall": "bower install"
+        "postinstall": "bower install",
+        "prepush": "npm run lint"
     },
     "repository": "",
     "keywords": [
@@ -20,6 +22,9 @@
         "serve-static": "~1.7.0"
     },
     "devDependencies": {
+        "eslint": "^4.19.1",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-plugin-import": "^2.10.0",
         "grunt": "^1.0.2",
         "grunt-contrib-clean": "^1.1.0",
         "grunt-contrib-concat": "^1.0.1",
@@ -32,6 +37,7 @@
         "grunt-contrib-less": "^1.4.1",
         "grunt-contrib-uglify": "^3.3.0",
         "grunt-contrib-watch": "^1.0.0",
+        "husky": "^0.14.3",
         "less": "^3.0.1"
     }
 }

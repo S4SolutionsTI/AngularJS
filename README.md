@@ -27,3 +27,5 @@ https://gruntjs.com/getting-started
 Web sites are made of lots of things — frameworks, libraries, assets, and utilities. Bower manages all these things for you.
 
 https://bower.io/
+
+https://medium.com/trainingcenter/melhorando-seu-workflow-javascript-com-npm-scripts-eslint-e-git-hooks-6d7c22c9161
