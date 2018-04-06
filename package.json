@@ -3,6 +3,12 @@
     "version": "0.1.0",
     "description": "AngularJS",
     "main": "hello-from-nodejs-server.js",
+    "eslintConfig": {
+        "env": {
+            "browser": true,
+            "node": true
+        }
+    },
     "scripts": {
         "lint": "./node_modules/.bin/eslint public/*.js",
         "test": "echo \"Error: no test specified! Configure in package.json\" && exit 1",
@@ -17,7 +23,7 @@
         "eclipse",
         "nodeclipse"
     ],
-    "author": "",
+    "author": "jfranciscos4 <jfranciscos4@live.com>",
     "license": "MIT",
     "readmeFilename": "README.md",
     "dependencies": {
