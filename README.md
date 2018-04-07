@@ -4,7 +4,9 @@
 
 ## Usage
 
-
+```
+$ npm install
+```
 
 ## Developing
 
