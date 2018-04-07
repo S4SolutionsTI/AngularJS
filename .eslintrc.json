@@ -11,11 +11,11 @@
     },
 
     "globals": {
-        "_": false,
+        "_": true,
         "angular": true,
         "module": false,
         "require": false,
-        "console": false,
+        "console": true,
         "formatters": true
     }
 }
