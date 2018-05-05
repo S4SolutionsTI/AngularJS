@@ -3,7 +3,7 @@
 (function(angular) {
   'use strict';
   
-  var modules = ['AngularJS.Header', 'AngularJS.Footer'];
+  var modules = ['AngularJS.Header', 'AngularJS.Body', 'AngularJS.Footer'];
   angular.module('AngularJS', modules, AngularJS);
   
   AngularJS.$inject = ['$httpProvider'];
