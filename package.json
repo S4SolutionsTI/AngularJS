@@ -1,21 +1,23 @@
 {
 	"name": "AngularJS",
-	"version": "0.1.0",
-	"description": "AngularJS",
+	"version": "1.0.0",
+	"description": "Frontend Angularjs with Bootstrap 3",
 	"main": "server.js",
 	"eslintConfig": {
 		"env": {
 			"browser": true,
-			"node": true
+			"node": true,
+			"angular": true,
+			"console": true
 		}
 	},
 	"scripts": {
-		"lint": "./node_modules/.bin/eslint ./public/js/*.js",
+		"lint": "./node_modules/.bin/eslint ./src/app/**/*.js",
 		"test": "echo \"Error: no test specified! Configure in package.json\" && exit 1",
 		"postinstall": "bower install",
-		"prepush": "npm run lint",
-		"precommit": "npm run lint",
-		"grunt": "grunt"
+		"prepush": "npm run deploy",
+		"precommit": "npm run deploy",
+		"deploy": "grunt"
 	},
 	"repository": "",
 	"keywords": [
@@ -23,18 +25,20 @@
 		"eclipse",
 		"nodeclipse"
 	],
-	"author": "jfranciscos4 <jfranciscos4@live.com>",
-	"license": "MIT",
+	"author": "jfranciscos4 <silvaivctd@gmail.com>",
+	"license": "",
 	"readmeFilename": "README.md",
 	"dependencies": {
 		"serve-static": "~1.7.0"
 	},
 	"devDependencies": {
 		"ajv": "^5.0.0",
+		"angular-translate": "^2.17.1",
 		"eslint": "^4.9.0",
 		"eslint-plugin-angular": "^3.3.0",
 		"eslint-plugin-import": "^2.7.0",
 		"grunt": "^1.0.2",
+		"grunt-bootlint": "^0.10.2",
 		"grunt-contrib-clean": "^1.1.0",
 		"grunt-contrib-concat": "^1.0.1",
 		"grunt-contrib-copy": "^1.0.0",
@@ -45,8 +49,12 @@
 		"grunt-contrib-jshint": "^1.1.0",
 		"grunt-contrib-less": "^1.4.1",
 		"grunt-contrib-uglify": "^3.3.0",
-		"grunt-contrib-watch": "^1.0.0",
+		"grunt-contrib-watch": "^1.0.1",
+		"grunt-replace": "^1.0.1",
 		"husky": "^0.14.3",
-		"less": "^3.0.1"
+		"jshint-stylish": "^2.2.1",
+		"karma": "^2.0.0",
+		"less": "^3.0.1",
+		"time-grunt": "^1.4.0"
 	}
 }

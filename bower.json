@@ -1,33 +1,37 @@
 {
-	"name": "angularjs",
-	"version": "0.0.0",
-	"authors": [
-		"S4Solutions"
-	],
-	"license": "MIT",
-	"private": true,
-	"ignore": [
-		"**/.*",
-		"node_modules",
-		"bower_components",
-		"test",
-		"tests",
-		"public/bower_components"
-	],
-	"dependencies": {
-		"angular": "~1.3.0"
-	},
-	"homepage": "https://github.com/S4SolutionsTI/AngularJS",
-	"description": "Infra Frontend AngularJS",
-	"main": "hello-from-nodejs-server.js",
-	"keywords": [
-		"angularjs",
-		"javascript",
-		"less",
-		"grunt",
-		"bower",
-		"json",
-		"node",
-		"npm"
-	]
+  "name": "AngularJs",
+  "version": "1.0.0",
+  "authors": [
+    "jfranciscos4"
+  ],
+  "license": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.3.0",
+    "bootstrap-css": "3.3.7"
+  },
+  "homepage": "",
+  "description": "Frontend AngularJS",
+  "main": "server.js",
+  "keywords": [
+    "angularjs",
+    "javascript",
+    "less",
+    "grunt",
+    "bower",
+    "json",
+    "node",
+    "npm"
+  ],
+  "devDependencies": {
+    "angular-translate": "^2.17.1"
+  }
 }
