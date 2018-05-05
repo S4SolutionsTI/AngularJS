@@ -1,0 +1,24 @@
+{
+	"extends": "eslint:recommended",
+	"parserOptions": {
+	   "ecmaVersion": 5
+	 },
+	 "env": {
+        "browser": true, // default: false
+        "node": true,
+        "mocha": true,
+        "jasmine": true
+    },
+
+    "globals": {
+        "_": true,
+        "angular": false,
+        "module": false,
+        "require": false,
+        "console": false,
+        "formatters": true
+    },
+	"rules": {
+        "no-console": "off"
+    }
+}
