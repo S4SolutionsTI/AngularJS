@@ -1,10 +1,10 @@
 {
-	"extends": "eslint:recommended",
-	"parserOptions": {
-	   "ecmaVersion": 5
-	 },
-	 "env": {
-        "browser": true, // default: false
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "env": {
+        "browser": true,
         "node": true,
         "mocha": true,
         "jasmine": true
@@ -18,7 +18,7 @@
         "console": false,
         "formatters": true
     },
-	"rules": {
+    "rules": {
         "no-console": "off"
     }
 }

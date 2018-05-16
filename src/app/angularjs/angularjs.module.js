@@ -3,10 +3,11 @@
 (function(angular) {
   'use strict';
   
-  var modules = ['AngularJS.Header', 'AngularJS.Body', 'AngularJS.Footer'];
+  var modules = ['ngAnimate', 'ngTouch', 'ui.bootstrap', 'AngularJS.Header', 'AngularJS.Body', 'AngularJS.Footer'];
   angular.module('AngularJS', modules, AngularJS);
   
   AngularJS.$inject = ['$httpProvider'];
+  
   function AngularJS($httpProvider) {
     $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
   }

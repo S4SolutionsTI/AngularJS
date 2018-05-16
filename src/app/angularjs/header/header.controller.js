@@ -5,19 +5,11 @@
   
   angular.module('AngularJS.Header').controller('HeaderController', HeaderController);
   
-  HeaderController.$inject = [];
+  HeaderController.$inject = ['$scope'];
   
-  function HeaderController() {
-    /* jshint validthis: true */
-    var hc = this;
+  function HeaderController($scope) {
     
-    hc.init = init;
-    
-    init();
-    
-    function init() {
-      
-    }
+    $scope.title = 'Hello';
     
   }
 })(angular);
