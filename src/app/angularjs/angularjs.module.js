@@ -1,15 +1,15 @@
 /* eslint-disable no-unused-vars */
 /* global angular */
 (function(angular) {
-  'use strict';
-  
-  var modules = ['ngAnimate', 'ngTouch', 'ui.bootstrap', 'AngularJS.Header', 'AngularJS.Body', 'AngularJS.Footer'];
-  angular.module('AngularJS', modules, AngularJS);
-  
-  AngularJS.$inject = ['$httpProvider'];
-  
-  function AngularJS($httpProvider) {
-    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
-  }
-  
+    'use strict';
+
+    var modules = ['ngAnimate', 'ngTouch', 'ui.bootstrap', 'AngularJS.Body', 'AngularJS.Footer', 'AngularJS.Header'];
+    angular.module('AngularJS', modules, AngularJS);
+
+    AngularJS.$inject = ['$httpProvider'];
+
+    function AngularJS($httpProvider) {
+        $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+    }
+
 })(angular);

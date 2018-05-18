@@ -4,6 +4,7 @@
     'use strict';
     var http = require('http');
     var serveStatic = require('serve-static');
+    var port = 4200;
 
     /*
      * https://github.com/expressjs/serve-static#serve-files-with-vanilla-nodejs-http-server
@@ -24,8 +25,8 @@
             console.log(res); // eslint-disable-line
             // no-console
         });
-    }).listen(8081, 'localhost');
-    console.log('Server running at http://localhost:8081/'); // eslint-disable-line
+    }).listen(port, 'localhost');
+    console.log('Server running at http://localhost:' + port + '/'); // eslint-disable-line
     // no-console
 
 })();

@@ -21,7 +21,14 @@ module.exports = function(grunt) {
                 options: {
                     separator: ';'
                 },
-                src: '<%= paths.src.js %>',
+                src: [
+                    'src/app/angularjs/b*/**/*.js',
+                    'src/app/angularjs/c*/**/*.js',
+                    'src/app/angularjs/f*/**/*.js',
+                    'src/app/angularjs/h*/**/*.js',
+                    'src/app/angularjs/angularjs-h*.modules.js',
+                    'src/app/angularjs/angularjs.modules.js'
+                ],
                 dest: '<%= paths.dest.js %>'
             },
             css: {
@@ -211,4 +218,4 @@ module.exports = function(grunt) {
         grunt.task.run('clean:css');
     });
     grunt.registerTask('default', ['deploy']);
-}
+};
