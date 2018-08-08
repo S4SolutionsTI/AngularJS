@@ -18,7 +18,7 @@ cache:
   - node_modules/
 
 test_async:
-  script:
+  script:   
    - npm install
    - npm run deploy
 #   - node ./specs/start.js ./specs/async.spec.js
@@ -27,3 +27,4 @@ test_async:
 #  script:
 #   - npm install
 #   - node ./specs/start.js ./specs/db-postgres.spec.js
+
